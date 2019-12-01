@@ -3,7 +3,7 @@ echo ////////////////////////////////////bem vindo ao sistema///////////////////
 echo ///////////////////////////////////////////////////////////////////////////////////////////////////////
 set /p usuario= Usuario: 
 set /p senha= Senha: 
-if %usuario% == admin if %senha% == admin (call :success) else (call :error)
+if %usuario% == admin if %senha% == admin (call :success) else (call :error) else (call :error)
 echo.&pause&goto:eof 
 :success
 color 2 
